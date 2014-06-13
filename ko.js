@@ -17,7 +17,11 @@
                 if (result.done) {
                     resolve(result.value);
                 } else {
-                    result.value.then(step, reject);
+                    if (Array.isArray(result.value)) {
+                        Promise.all(result.value).then(step, reject);
+                    } else {
+                        result.value.then(step, reject);
+                    }
                 }
             }
         });
