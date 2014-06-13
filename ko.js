@@ -2,7 +2,7 @@
     if (typeof define === 'function' && define.amd) {
         define(factory);
     } else {
-        root.ko = factory(root.b);
+        root.ko = factory();
     }
 })(this, function () {
     return function (fn) {
