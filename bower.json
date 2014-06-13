@@ -1,0 +1,26 @@
+{
+  "name": "ko",
+  "main": "ko.js",
+  "version": "0.1.0",
+  "authors": [
+    "David <davidmm@gmail.com>"
+  ],
+  "description": "Coroutines for the browser.",
+  "keywords": [
+    "coroutine",
+    "generator",
+    "promise"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mocha": "~1.20.1",
+    "expect": "~0.3.1"
+  }
+}
